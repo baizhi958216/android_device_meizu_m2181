@@ -10,6 +10,7 @@ DEVICE_PATH := device/meizu/m2181
 M2181_PREBUILT := device/meizu/prebuilt/m2181
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B updater.
 AB_OTA_UPDATER := true
