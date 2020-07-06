@@ -7,6 +7,9 @@
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Enable Scoped Storage related
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/meizu/m2181/m2181-vendor.mk)
 
