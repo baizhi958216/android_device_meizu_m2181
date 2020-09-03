@@ -239,7 +239,7 @@ PRODUCT_COPY_FILES += \
 
 # ODM ueventd.rc
 # - only for use with VM support right now
-PRODUCT_PACKAGES += vmmgr
+PRODUCT_PACKAGES += vmmgr vmmgr.rc vmmgr.conf
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/ueventd-odm.rc:$(TARGET_COPY_OUT_ODM)/ueventd.rc
 
 # OpenGl
