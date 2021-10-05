@@ -64,5 +64,7 @@ $(foreach pl, $(PARTITION_LIST), $(eval TARGET_COPY_OUT_$(pl) := $(call to-lower
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
+BOARD_USES_METADATA_PARTITION := true
+
 # Inherit from proprietary files
 include vendor/meizu/m2181/BoardConfigVendor.mk
