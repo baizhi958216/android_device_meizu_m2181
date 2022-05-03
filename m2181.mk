@@ -69,7 +69,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Bluetooth
@@ -207,10 +206,6 @@ PRODUCT_COPY_FILES += \
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Networking
-PRODUCT_PACKAGES += \
-    libnl
 
 # NFC
 PRODUCT_PACKAGES += \
