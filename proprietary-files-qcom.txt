@@ -51,6 +51,7 @@ vendor/lib/libcdsprpc.so|6aae12904697f53905ebbe8f96bf3f7e18dcffcc
 vendor/lib/libcdsp_default_listener.so|24080c1b7ff13680ae08f0ca9c5e004d6abe7cb5
 vendor/lib/libsysmon_cdsp_skel.so|98693ffb744f779a52fabef9fa9401c28fb8cb5c
 vendor/lib64/libcdsprpc.so|68bcabef3db7b9785d9205556eb517e5cc77dd26
+vendor/lib64/libsdsprpc.so|624bd14fc56b22d38b7f4d7ed1a24805fa2f1301
 vendor/lib64/libcdsp_default_listener.so|63a7093e7f49e5afeadaa331474580d0bc8b89de
 vendor/lib64/libsysmon_cdsp_skel.so|5bebbfec7f7be116e162d0982abb05c7562d2d13
 
