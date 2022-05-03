@@ -357,6 +357,11 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/firmware/goodix_cfg_group.bin
 vendor/firmware/goodix_firmware.bin
 
+# GPS - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/etc/gps.conf
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+
 # GPU firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
