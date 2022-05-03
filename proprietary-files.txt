@@ -21,6 +21,7 @@ vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/libadsprpc.so
 
 # ADSP modules - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
