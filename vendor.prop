@@ -212,6 +212,7 @@ persist.vendor.sensors.on_change_sample_period=true
 ro.boot.product.vendor.sku=lahaina
 
 # SOC
+ro.soc.model=SM8350
 ro.soc.manufacturer=QTI
 
 # Storage
