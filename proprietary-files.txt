@@ -353,6 +353,10 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# Fingerprint
+vendor/firmware/goodix_cfg_group.bin
+vendor/firmware/goodix_firmware.bin
+
 # GPU firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
