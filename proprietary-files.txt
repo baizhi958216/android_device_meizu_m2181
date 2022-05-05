@@ -1,12 +1,4 @@
-# ACDB
-vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_General_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Global_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Handset_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Hdmi_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Headset_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Speaker_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_workspaceFile.qwsp
+# ACDB - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_Bluetooth_cal.acdb
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_General_cal.acdb
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_Global_cal.acdb
@@ -15,70 +7,6 @@ vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_Hdmi_cal.acdb
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_Headset_cal.acdb
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_Speaker_cal.acdb
 vendor/etc/acdbdata/HDK/lahaina-hhg-snd-card/HHG_workspaceFile.qwsp
-vendor/etc/acdbdata/HDK/HDK_Bluetooth_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_General_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_Global_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_Handset_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_Hdmi_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_Headset_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_Speaker_cal.acdb
-vendor/etc/acdbdata/HDK/HDK_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_General_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Global_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-shimaidps-snd-card/IDPS_Shima_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_General_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Global_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/lahaina-yupikidp-snd-card/IDP_Yupik_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/IDP_Shima_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_General_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_Global_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Shima_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_General_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Global_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-shimaqrd-snd-card/QRD_Shima_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_General_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Global_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/lahaina-yupikqrd-snd-card/QRD_Yupik_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
@@ -87,36 +15,23 @@ vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ADSP
+# ADSP - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/adsprpcd
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/libadsprpc.so
 
-# ADSP modules
-system_ext/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so
-system_ext/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
-system_ext/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so
-system_ext/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
-system_ext/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
-system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8150.so
-system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8250.so
-system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
+# ADSP modules - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/lib/rfsa/adsp/bm2n06.bin
 vendor/lib/rfsa/adsp/bm2n08.bin
 vendor/lib/rfsa/adsp/bm2n12.bin
 vendor/lib/rfsa/adsp/bm2n13.bin
 vendor/lib/rfsa/adsp/bm2n14.bin
 vendor/lib/rfsa/adsp/bm2n15.bin
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
-vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
-vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
-vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
@@ -130,9 +45,10 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhdr_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
 vendor/lib/rfsa/adsp/libmobilenet_dsp_frc_networks.so
+vendor/lib/rfsa/adsp/libmobilenet_dsp_frc.so
 vendor/lib/rfsa/adsp/libneat_1_1_skel.so
+vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsn_hvx_skel.so
@@ -140,88 +56,297 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libsuper_res_networks.so
 vendor/lib/rfsa/adsp/libvpp_ais_networks.so
+vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
+vendor/lib/rfsa/adsp/libVppFrcQnnHtp.so
+vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libvpt_action_recognition.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
-# Audio
-vendor/lib/hw/audio.primary.lahaina.so
+# ADSP modules (aptX) - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
+
+# Audio - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+system_ext/etc/permissions/audiosphere.xml
+-system_ext/framework/audiosphere.jar
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libdrc.so
+vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib64/hw/audio.primary.lahaina.so
+vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioconfigstore.so
+vendor/lib64/libaudioparsers.so
+vendor/lib64/libhdmipassthru.so
 vendor/lib64/libqtigef.so
-vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libssrec.so
 
-# Audio (FX modules)
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libbassboostMz.so
-vendor/lib/soundfx/libdynproc.so
-vendor/lib/soundfx/libequalizerMz.so
-vendor/lib/soundfx/liblivemusicMz.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcompostprocbundle.so
-vendor/lib/soundfx/libqcomvisualizer.so
-vendor/lib/soundfx/libqcomvoiceprocessing.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libvirtualizerMz.so
-vendor/lib/soundfx/libvolumelistener.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvolumelistener.so
+# Audio HAL - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+-vendor/lib/libaudio_log_utils.so
+-vendor/lib64/libaudio_log_utils.so
 
-# Audio (Firmware)
+# Audio (Firmware) - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/RCV-cs35l45-dsp1-spk-prot.bin
 vendor/firmware/RCV-cs35l45-dsp1-spk-diag.bin
 vendor/firmware/SPK-cs35l45-dsp1-spk-diag.bin
 vendor/firmware/SPK-cs35l45-dsp1-spk-prot.bin
-vendor/firmware/cs35l45-delta-rcv-game.txt
-vendor/firmware/cs35l45-delta-rcv-handset.txt
-vendor/firmware/cs35l45-delta-rcv-handsfree.txt
-vendor/firmware/cs35l45-delta-rcv-movie.txt
-vendor/firmware/cs35l45-delta-rcv-music.txt
-vendor/firmware/cs35l45-delta-spk-game.txt
-vendor/firmware/cs35l45-delta-spk-handsfree.txt
-vendor/firmware/cs35l45-delta-spk-movie.txt
-vendor/firmware/cs35l45-delta-spk-music.txt
 vendor/firmware/cs35l45-dsp1-spk-diag.wmfw
 vendor/firmware/cs35l45-dsp1-spk-prot.wmfw
+vendor/firmware/cs35l45-delta-rcv-handset.txt
+vendor/firmware/cs35l45-delta-rcv-music.txt
+vendor/firmware/cs35l45-delta-spk-movie.txt
+vendor/firmware/cs35l45-delta-spk-handsfree.txt
+vendor/firmware/cs35l45-delta-spk-game.txt
+vendor/firmware/cs35l45-delta-rcv-movie.txt
+vendor/firmware/cs35l45-delta-rcv-game.txt
+vendor/firmware/cs35l45-delta-spk-music.txt
+vendor/firmware/cs35l45-delta-rcv-handsfree.txt
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libfastcvdsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
+# Audio FX modules - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libshoebox.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libshoebox.so
 
-# Display-calibration
+# Camera - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib64/camera/com.qti.sensor.imx682.so
+vendor/lib64/camera/com.qti.sensormodule.foxconn_imx682.bin
+vendor/lib64/camera/com.qti.sensormodule.foxconn_ov08a10.bin
+vendor/lib64/camera/com.qti.sensormodule.foxconn_ov08c10.bin
+vendor/lib64/camera/com.qti.sensormodule.tsp_s5k3p9sx.bin
+vendor/lib64/camera/com.qti.sensormodule.tsp_s5k3t2sp.bin
+vendor/lib64/camera/com.qti.sensor.ov08a10.so
+vendor/lib64/camera/com.qti.sensor.ov08c10.so
+vendor/lib64/camera/com.qti.sensor.s5k3p9sx.so
+vendor/lib64/camera/com.qti.sensor.s5k3t2sp.so
+vendor/lib64/camera/com.qti.tuned.foxconn_imx682.bin
+vendor/lib64/camera/com.qti.tuned.foxconn_ov08a10.bin
+vendor/lib64/camera/com.qti.tuned.foxconn_ov08c10.bin
+vendor/lib64/camera/com.qti.tuned.tianshi_s5k3p9sx.bin
+vendor/lib64/camera/com.qti.tuned.tianshi_s5k3t2sp.bin
+vendor/lib64/camera/fdconfigpreview.bin
+vendor/lib64/camera/fdconfigpreviewlite.bin
+vendor/lib64/camera/fdconfigvideo.bin
+vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/com.qti.chiusecaseselector.so
+vendor/lib64/com.qti.feature2.derivedoffline.so
+vendor/lib64/com.qti.feature2.statsregeneration.so
+vendor/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.gs.sm8350.so
+vendor/lib64/com.qti.feature2.gs.sdm865.so
+vendor/lib64/com.qti.feature2.ml.so
+vendor/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.rtmcx.so
+vendor/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.mcreprocrt.so
+vendor/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.realtimeserializer.so
+vendor/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.mux.so
+vendor/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.stats.common.so
+vendor/lib64/com.qualcomm.mcx.distortionmapper.so
+vendor/lib64/com.qualcomm.mcx.linearmapper.so
+vendor/lib64/com.qualcomm.mcx.policy.mfl.so
+vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/libI420colorconvert.so
+vendor/lib64/libaidenoiser.so
+vendor/lib64/libbitmlengine.so
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libcamerapostproc.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2svarnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/libchilog.so
+vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libdualcam_optical_zoom_control.so
+vendor/lib64/libdualcam_video_optical_zoom.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
+vendor/lib64/libipebpsstriping.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libnanopb.so
+vendor/lib64/libofflinedump.so
+vendor/lib64/libofflinelog.so
+vendor/lib64/libopencv.so
+vendor/lib64/libopestriping.so
+vendor/lib64/libos.so
+vendor/lib64/libqll10.so
+vendor/lib64/libqllengine.so
+vendor/lib64/libremosaiclib.so
+vendor/lib64/libsns_api.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libswregistrationalgo.so
+vendor/lib64/libsynx.so
+vendor/lib64/libtfestriping.so
+vendor/lib64/libthreadutils.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/libbitmlenginev2.so
+
+# Camera (camerax) - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxifestriping.so
+vendor/lib/libcamxtintlessalgo.so
+vendor/lib/libcamxfacialfeatures.so
+vendor/lib/libcamximageformatutils.so
+vendor/lib/libcamxfdalgo.so
+vendor/lib/libcamxswispiqmodule.so
+vendor/lib/libcamxfdengine.so
+vendor/lib/libcamxexternalformatutils.so
+vendor/lib/libcamxqsatalgo.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxifestriping.so
+vendor/lib64/libcamxtintlessalgo.so
+vendor/lib64/libcamxfacialfeatures.so
+vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamxfdalgo.so
+vendor/lib64/libcamxswispiqmodule.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxexternalformatutils.so
+vendor/lib64/libcamxqsatalgo.so
+vendor/lib64/libcamxswprocessalgo.so
+
+# Camera-arcsoft - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
+vendor/lib64/libarcsoft_hdr_detection.so
+vendor/lib64/libarcsoft_videostabilizer.so
+vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
+vendor/lib64/libarcsoft_dualcam_refocus_video.so
+vendor/lib64/libarcsoft_dark_vision_raw.so
+vendor/lib64/libarcsoft_superportrait.so
+vendor/lib64/libarcsoft_super_night_raw.so
+vendor/lib64/libarcsoft_aiscenedetection.so
+vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarcsoft_video_super_night.so
+
+# Camera components - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib64/camera/components/com.arcsoft.node.beauty.so
+vendor/lib64/camera/components/com.arcsoft.node.darkvisionraw.so
+vendor/lib64/camera/components/com.arcsoft.node.eis.so
+vendor/lib64/camera/components/com.arcsoft.node.hdr.so
+vendor/lib64/camera/components/com.arcsoft.node.lowlighthdr.so
+vendor/lib64/camera/components/com.arcsoft.node.picauto.so
+vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
+vendor/lib64/camera/components/com.arcsoft.node.sat.so
+vendor/lib64/camera/components/com.arcsoft.node.superlowlightraw.so
+vendor/lib64/camera/components/com.arcsoft.node.videosn.so
+vendor/lib64/camera/components/com.arcsoft.node.videosp.so
+vendor/lib64/camera/components/com.megvii.node.undistort.so
+vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
+vendor/lib64/camera/components/com.qti.eisv2.so
+vendor/lib64/camera/components/com.qti.eisv3.so
+vendor/lib64/camera/components/com.qti.hvx.addconstant.so
+vendor/lib64/camera/components/com.qti.hvx.binning.so
+vendor/lib64/camera/components/com.qti.node.customhwnode.so
+vendor/lib64/camera/components/com.qti.node.depth.so
+vendor/lib64/camera/components/com.qti.node.dewarp.so
+vendor/lib64/camera/components/com.qti.node.dummyrtb.so
+vendor/lib64/camera/components/com.qti.node.dummysat.so
+vendor/lib64/camera/components/com.qti.node.eisv2.so
+vendor/lib64/camera/components/com.qti.node.eisv3.so
+vendor/lib64/camera/components/com.qti.node.fcv.so
+vendor/lib64/camera/components/com.qti.node.formatconversion.so
+vendor/lib64/camera/components/com.qti.node.gpu.so
+vendor/lib64/camera/components/com.qti.node.memcpy.so
+vendor/lib64/camera/components/com.qti.node.ml.so
+vendor/lib64/camera/components/com.qti.node.remosaic.so
+vendor/lib64/camera/components/com.qti.node.stich.so
+vendor/lib64/camera/components/com.qti.node.swaidenoiser.so
+vendor/lib64/camera/components/com.qti.node.swbestats.so
+vendor/lib64/camera/components/com.qti.node.swcac.so
+vendor/lib64/camera/components/com.qti.node.swec.so
+vendor/lib64/camera/components/com.qti.node.swfusion.so
+vendor/lib64/camera/components/com.qti.node.swlsc.so
+vendor/lib64/camera/components/com.qti.node.swmctf.so
+vendor/lib64/camera/components/com.qti.node.swmfnr.so
+vendor/lib64/camera/components/com.qti.node.swpdpc.so
+vendor/lib64/camera/components/com.qti.node.swpreprocess.so
+vendor/lib64/camera/components/com.qti.node.swregistration.so
+vendor/lib64/camera/components/com.qtistatic.stats.aec.so
+vendor/lib64/camera/components/com.qtistatic.stats.af.so
+vendor/lib64/camera/components/com.qtistatic.stats.awb.so
+vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
+vendor/lib64/camera/components/com.qti.stats.aec.so
+vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
+vendor/lib64/camera/components/com.qti.stats.aecxcore.so
+vendor/lib64/camera/components/com.qti.stats.afd.so
+vendor/lib64/camera/components/com.qti.stats.af.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so
+vendor/lib64/camera/components/com.qti.stats.asd.so
+vendor/lib64/camera/components/com.qti.stats.awb.so
+vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib64/camera/components/com.qti.stats.cnndriver.so
+vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+vendor/lib64/camera/components/com.qti.stats.haf.so
+vendor/lib64/camera/components/com.qti.stats.pdlib.so
+vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
+vendor/lib64/camera/components/com.qti.stats.tracker.so
+vendor/lib64/camera/components/libdepthmapwrapper_secure.so
+
+# Camera debug config - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/etc/camera/camxoverridesettings.txt
+
+# Camera-firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/CAMERA_ICP_170.elf
+
+# Camera-sensors - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
+vendor/lib/libjpege.so
+vendor/lib/libmctfengine_stub.so
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_pdpc.so
+vendor/lib/libmmcamera_lscv35.so
+vendor/lib/libmmcamera_bestats.so
+vendor/lib/libmmcamera_mfnr.so
+vendor/lib/libmmcamera_mfnr_t4.so
+vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libmmcamera_cac3.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_pdpc.so
+vendor/lib64/libmmcamera_lscv35.so
+vendor/lib64/libmmcamera_bestats.so
+vendor/lib64/libmmcamera_mfnr.so
+vendor/lib64/libmmcamera_mfnr_t4.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_cac3.so
+vendor/lib64/libjpege.so
+vendor/lib64/libmctfengine_stub.so
+
+# Display-calibration - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/etc/qdcm_calib_data_meizu_amoled_cmd_mode_dsi_3k_panel_with_DSC.xml
 
-# DRM-widevine
+# DRM-widevine - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
@@ -232,12 +357,12 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/firmware/goodix_cfg_group.bin
 vendor/firmware/goodix_firmware.bin
 
-# GPS
+# GPS - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/etc/gps.conf
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 
-# GPU firmware
+# GPU firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/a615_zap.b00
 vendor/firmware/a615_zap.b01
 vendor/firmware/a615_zap.b02
@@ -253,7 +378,7 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
-# IPA-Firmware
+# IPA-Firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
@@ -262,7 +387,7 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
-# NFC
+# NFC - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/nqnfcinfo
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
@@ -270,7 +395,7 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-qrd-SN100.conf
 vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
 
-# Sensors
+# Sensors - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
@@ -290,7 +415,7 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/sensors.ssc.so
 
-# Sensor-configs
+# Sensor-configs - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/etc/sensors/config/cedros_ak991x_0.json
 vendor/etc/sensors/config/cedros_bu52053nvx_0.json
 vendor/etc/sensors/config/cedros_default_sensors.json
@@ -499,7 +624,7 @@ vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/sns_reg_config
 
-# Thermal
+# Thermal - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine.conf
@@ -524,18 +649,18 @@ vendor/etc/thermal.mid.level4.conf
 vendor/etc/thermal.sgame.conf
 vendor/etc/thermal.super.conf
 
-# Vibrator
+# Vibrator - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/lib/hw/awinic.haptic.effect.so
 vendor/firmware/awinic_haptic_params.bin
 vendor/firmware/aw8697_osc_rtp_24K_5s.bin
 vendor/firmware/aw_170hz.bin
 
-# VM
+# VM - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/bin/vmmgr
 vendor/etc/init/vmmgr.rc
 vendor/etc/vmmgr.conf
 
-# VPU Firmware
+# VPU Firmware - from meizu/meizu_18_CN/meizu18:11/RKQ1.210715.001/1646967620:user/release-keys
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
 vendor/firmware/vpu20_1v.b03
