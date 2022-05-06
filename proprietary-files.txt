@@ -575,6 +575,11 @@ vendor/firmware/a660_zap.b02
 vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
+# Health
+vendor/bin/hw/android.hardware.health@2.1-service
+vendor/etc/init/android.hardware.health@2.1-service.rc
+vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
+
 # IPA-Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
