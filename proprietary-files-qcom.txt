@@ -724,6 +724,7 @@ vendor/lib64/lib-rtpcommon.so|f8f8abedef8345d9dbefd59fea858a9eb40cc45c
 vendor/lib64/lib-rtpcore.so|5cc4d0449630e29ac6ce55627660a38b990f54a1
 vendor/lib64/lib-rtpsl.so|d32d436946ea437c11a1fcbbb986b9c414131ed7
 vendor/lib64/librcc.so|55786e5f520243dbe825f9a003efc94db01e9243
+vendor/lib64/vendor.qti.hardware.qconfig@1.0.so|91d2d33c1d8c6b388d6553d2dd8506e54f34e24a
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|433537f612589123e8be515fd62f4ec170d9c334
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so|7f2f5dddae69ec49abeded28c972d0cc1d05b3bc
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so|5fd7ae0d8d3cff3119a0f8057d27dead72369e07
