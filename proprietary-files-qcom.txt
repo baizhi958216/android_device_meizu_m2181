@@ -475,6 +475,7 @@ vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|cb8e44a67709a5d9c2f0544
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|5560bfccdc7ea51ed6f3ae032573122ef113c619
 vendor/lib64/ls_nq_client.so|d8942d3dbd23e6845aac517f8d739848593b87c7
 vendor/lib64/se_nq_extn_client.so|df7a377b826b6ed2a68059504962ac517939d4d1
+vendor/lib64/jcos_nq_client.so|22db02f4bcc6e1932ca2a29bc7ee837889e07b02
 vendor/lib64/android.hardware.secure_element@1.0-impl.so|4fd685591c2232c0e5b962e52a3e53b51ce9cbc5
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|e8375850e676bb3fc1b953cb06cc1a819237c18d
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|ae11c893e347b4e263f28962920e1b8e76fbd687
