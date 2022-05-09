@@ -113,6 +113,10 @@ $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 TARGET_HAS_DIAG_ROUTER := true
 TARGET_KERNEL_VERSION := 5.4
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml
+
 # Vendor_boot modules
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(M2181_PREBUILT)/modules/vendor_boot,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
