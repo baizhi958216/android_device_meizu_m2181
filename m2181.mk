@@ -9,6 +9,10 @@ M2181_PREBUILT := device/meizu/prebuilt/m2181
 # DTB
 PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
 
+# Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Vendor_boot modules
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(M2181_PREBUILT)/modules/vendor_boot,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
