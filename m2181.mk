@@ -13,6 +13,13 @@ PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0 \
+    android.hidl.manager@1.0.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
