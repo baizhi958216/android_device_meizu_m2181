@@ -27,6 +27,18 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service
+
+# Bootloader HAL used for A/B updates.
+PRODUCT_PACKAGES += \
+    bootctrl.m2181
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
 # DTB
 PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
 
@@ -92,7 +104,10 @@ PRODUCT_COPY_FILES += \
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
+    update_engine_sideload \
     update_verifier
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # WiFi
 PRODUCT_PACKAGES += \
