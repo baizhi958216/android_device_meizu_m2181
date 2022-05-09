@@ -15,6 +15,7 @@ DEVICE_PROVISIONED=1
 ro.telephony.default_network=33,33
 
 dalvik.vm.heapsize=36m
+dalvik.vm.dex2oat64.enabled=true
 dev.pm.dyn_samplingrate=1
 
 #ro.hdmi.enable=true
@@ -51,6 +52,14 @@ persist.vendor.data.mode=concurrent
 
 #system props for time-services
 persist.timed.enable=true
+
+#
+# system prop for opengles version
+#
+# 196608 is decimal for 0x30000 to report version 3
+# 196609 is decimal for 0x30001 to report version 3.1
+# 196610 is decimal for 0x30002 to report version 3.2
+ro.opengles.version=196610
 
 #
 # System props for telephony
@@ -151,6 +160,8 @@ ro.media.recorder-max-base-layer-fps = 60
 
 #Battery Property
 ro.charger.enable_suspend = 1
+#Disable MTE Async for system server
+arm64.memtag.process.system_server=off
 
 #FLYME_MMF_AUDIO: AUDIO_ROTATION & Nmdplayer hifi support {@
 ro.audio.monitorRotation=true
@@ -163,15 +174,5 @@ persist.camera.privapp.list=org.codeaurora.snapcam,com.meizu.media.camera
 ro.vendor.camera.no_vts=1
 #Camera_Edit end
 
-#Bluetooth read bt mac from modem_nv
-persist.vendor.bluetooth.modem_nv_support=true
-# end of device/qcom/qssi/system.prop
-
-#
-# ADDITIONAL_BUILD_PROPERTIES
-#
-ro.flyme.published=true
-ro.product.mobile.name=m2181
-ro.treble.enabled=true
-net.bt.name=Android
-ro.vendor.qti.va_aosp.support=1
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=0
