@@ -46,10 +46,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service
 
 # Bootloader HAL used for A/B updates.
-PRODUCT_PACKAGES += \
-    bootctrl.m2181
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+PRODUCT_PACKAGES += bootctrl.m2181
+PRODUCT_PACKAGES_DEBUG += bootctl
 
 # DTB
 PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
@@ -57,6 +55,9 @@ PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# AIDs
+PRODUCT_PACKAGES += fs_config_files
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -121,8 +122,7 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
+PRODUCT_PACKAGES_DEBUG += update_engine_client
 
 # WiFi
 PRODUCT_PACKAGES += \
