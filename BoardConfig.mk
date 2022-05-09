@@ -48,6 +48,10 @@ TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := vendor/lahaina_GKI
 TARGET_KERNEL_SOURCE := kernel/meizu/sm8350
 
+# HIDL
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest_lahaina.xml
+
 # Partitions
 BOARD_SUPER_PARTITION_GROUPS := meizu_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 10737418240
