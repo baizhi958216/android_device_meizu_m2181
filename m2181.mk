@@ -85,7 +85,6 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sdio.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.display_boot.sh \
     init.qti.kernel.debug-lahaina.sh \
@@ -100,7 +99,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.qti.kernel.rc \
     init.qti.ufs.rc \
     init.target.rc \
@@ -108,6 +106,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.qcom
+
+# USB
+$(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
+
+TARGET_HAS_DIAG_ROUTER := true
+TARGET_KERNEL_VERSION := 5.4
 
 # Vendor_boot modules
 PRODUCT_COPY_FILES += \
