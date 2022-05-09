@@ -17,6 +17,5 @@ cc_binary {
     ],
     overrides: [
         "lights.qcom",
-        "android.hardware.lights-service.qti",
     ],
 }

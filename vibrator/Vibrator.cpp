@@ -27,8 +27,9 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#define LOG_TAG "vendor.qti.vibrator"
+#define LOG_TAG "vendor.qti.vibrator.xiaomi_kona"
 
+#include <cutils/properties.h>
 #include <dirent.h>
 #include <inttypes.h>
 #include <linux/input.h>
@@ -54,6 +55,13 @@ namespace vibrator {
 #define CUSTOM_DATA_LEN         3
 #define NAME_BUF_SIZE           32
 
+#define MSM_CPU_LAHAINA         415
+#define APQ_CPU_LAHAINA         439
+#define MSM_CPU_SHIMA           450
+#define MSM_CPU_SM8325          501
+#define APQ_CPU_SM8325P         502
+#define MSM_CPU_YUPIK           475
+
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
 static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
@@ -61,13 +69,14 @@ static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
 InputFFDevice::InputFFDevice()
 {
     DIR *dp;
+    FILE *fp = NULL;
     struct dirent *dir;
     uint8_t ffBitmask[FF_CNT / 8];
     char devicename[PATH_MAX];
     const char *INPUT_DIR = "/dev/input/";
     char name[NAME_BUF_SIZE];
     int fd, ret;
-    soc_info_v0_1_t soc = {MSM_CPU_UNKNOWN};
+    int soc = property_get_int32("ro.vendor.qti.soc_id", -1);
 
     mVibraFd = INVALID_VALUE;
     mSupportGain = false;
@@ -104,8 +113,8 @@ InputFFDevice::InputFFDevice()
             continue;
         }
 
-        if (strcmp(name, "qcom-hv-haptics") && strcmp(name, "qti-haptics")) {
-            ALOGD("not a qcom/qti haptics device\n");
+        if (strcmp(name, "qcom-hv-haptics") && strcmp(name, "qti-haptics") &&
+                strcmp(name, "aw8697_haptic")) {
             close(fd);
             continue;
         }
@@ -126,9 +135,11 @@ InputFFDevice::InputFFDevice()
             if (test_bit(FF_GAIN, ffBitmask))
                 mSupportGain = true;
 
-            get_soc_info(&soc);
-            ALOGD("msm CPU SoC ID: %d\n", soc.msm_cpu);
-            switch (soc.msm_cpu) {
+            if (soc <= 0 && (fp = fopen("/sys/devices/soc0/soc_id", "r")) != NULL) {
+                fscanf(fp, "%u", &soc);
+                fclose(fp);
+            }
+            switch (soc) {
             case MSM_CPU_LAHAINA:
             case APQ_CPU_LAHAINA:
             case MSM_CPU_SHIMA:
@@ -399,7 +410,6 @@ ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
 
     if (ledVib.mDetected) {
         *_aidl_return |= IVibrator::CAP_PERFORM_CALLBACK;
-        ALOGD("QTI Vibrator reporting capabilities: %d", *_aidl_return);
         return ndk::ScopedAStatus::ok();
     }
 
@@ -410,14 +420,11 @@ ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
     if (ff.mSupportExternalControl)
         *_aidl_return |= IVibrator::CAP_EXTERNAL_CONTROL;
 
-    ALOGD("QTI Vibrator reporting capabilities: %d", *_aidl_return);
     return ndk::ScopedAStatus::ok();
 }
 
 ndk::ScopedAStatus Vibrator::off() {
     int ret;
-
-    ALOGD("QTI Vibrator off");
     if (ledVib.mDetected)
         ret = ledVib.off();
     else
@@ -431,8 +438,6 @@ ndk::ScopedAStatus Vibrator::off() {
 ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
                                 const std::shared_ptr<IVibratorCallback>& callback) {
     int ret;
-
-    ALOGD("Vibrator on for timeoutMs: %d", timeoutMs);
     if (ledVib.mDetected)
         ret = ledVib.on(timeoutMs);
     else
@@ -443,9 +448,7 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
 
     if (callback != nullptr) {
         std::thread([=] {
-            ALOGD("Starting on on another thread");
             usleep(timeoutMs * 1000);
-            ALOGD("Notifying on complete");
             if (!callback->onComplete().isOk()) {
                 ALOGE("Failed to call onComplete");
             }
@@ -462,13 +465,8 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
     if (ledVib.mDetected)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
-    ALOGD("Vibrator perform effect %d", effect);
-
-#ifdef TARGET_SUPPORTS_OFFLOAD
-    if (effect < Effect::CLICK ||  effect > Effect::RINGTONE_15)
-#else
-    if (effect < Effect::CLICK ||  effect > Effect::HEAVY_CLICK)
-#endif
+    if (effect < Effect::CLICK ||
+            effect > Effect::HEAVY_CLICK)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
     if (es != EffectStrength::LIGHT && es != EffectStrength::MEDIUM && es != EffectStrength::STRONG)
@@ -480,9 +478,7 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
 
     if (callback != nullptr) {
         std::thread([=] {
-            ALOGD("Starting perform on another thread");
             usleep(playLengthMs * 1000);
-            ALOGD("Notifying perform complete");
             callback->onComplete();
         }).detach();
     }
@@ -495,14 +491,9 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
     if (ledVib.mDetected)
         return ndk::ScopedAStatus::ok();
 
-#ifdef TARGET_SUPPORTS_OFFLOAD
-    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
-                     Effect::POP, Effect::HEAVY_CLICK, Effect::RINGTONE_12,
-                     Effect::RINGTONE_13, Effect::RINGTONE_14, Effect::RINGTONE_15};
-#else
     *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
                      Effect::POP, Effect::HEAVY_CLICK};
-#endif
+
     return ndk::ScopedAStatus::ok();
 }
 
@@ -512,8 +503,6 @@ ndk::ScopedAStatus Vibrator::setAmplitude(float amplitude) {
 
     if (ledVib.mDetected)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
-
-    ALOGD("Vibrator set amplitude: %f", amplitude);
 
     if (amplitude <= 0.0f || amplitude > 1.0f)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_ILLEGAL_ARGUMENT));
@@ -533,7 +522,6 @@ ndk::ScopedAStatus Vibrator::setExternalControl(bool enabled) {
     if (ledVib.mDetected)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
-    ALOGD("Vibrator set external control: %d", enabled);
     if (!ff.mSupportExternalControl)
         return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
@@ -580,4 +568,3 @@ ndk::ScopedAStatus Vibrator::alwaysOnDisable(int32_t id __unused) {
 }  // namespace hardware
 }  // namespace android
 }  // namespace aidl
-

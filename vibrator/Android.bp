@@ -37,7 +37,6 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk_platform",
-        "vendor.qti.hardware.vibrator.impl",
+        "vendor.qti.hardware.vibrator.impl.m2181",
     ],
-    overrides: ["vendor.qti.hardware.vibrator.service"],
 }

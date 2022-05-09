@@ -122,6 +122,11 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|b093bd56d1
 # CVP - from LA.UM.9.14.r1-18900.02-LAHAINA.QSSI12.0
 vendor/etc/cvp/v2.0/facedetection/model1.dat|b297119bcd28225b6b2f016dd00db6338ae21f13
 vendor/etc/cvp/v2.1/facedetection/model2.dat|2bea6521ea117c70f938f542f48f9983259fca8d
+vendor/lib/libcvp2_1.so|5b6169d6fcb9889e8a0297e67f82d8a79233841e
+vendor/lib/libcvp_common.so|7e2f56fed522df3a7dc838af50ade9a3bf1ca4c9
+vendor/lib/libcvp_util.so|8496e875b1a293630cf27c1d2a48cb30a6031a82
+vendor/lib/libcvpcpuRev_skel.so|0660fddb0594beb2225b29f7fc057a1d11c76ff4
+vendor/lib/vendor.qti.hardware.cvp@1.0.so|5a6db93ef3845af00ece656d65e22ed7f366c077
 vendor/lib64/libcvp2_1.so|38a44f537929e35d64ab7c950022110e6b534ded
 vendor/lib64/libcvp_common.so|98b05152cf489f213304918c69cae0bb5031c572
 vendor/lib64/libcvp_util.so|144fb872dc6bb42f084bae3965198be567fd36d7
@@ -261,6 +266,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|be03795000c1afc4c6aab37f73f6e3be
 vendor/bin/dspservice|c90e78bc6c7765b6c43409c62cc3c5d61c0132c6
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|5dc0cfb0b4fcb571262247adb53dcff0375950c3
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|24e3753889e3bc99ac901a71868f94d34d5b9cb2
 
 # FM - from LA.UM.9.14.r1-18900.02-LAHAINA.QSSI12.0
@@ -705,6 +711,7 @@ vendor/bin/imsdaemon|fb37822b771e79a581f2b3f9ac5170f8418b48f6
 vendor/etc/init/ims_rtp_daemon.rc|06510e936890f51aeb76f2cf3ed5dbe45e67ac20
 vendor/etc/init/imsdaemon.rc|18bbe0185cece34299e92a5f4f309b59ea93d684
 vendor/etc/seccomp_policy/imsrtp.policy|fb5f1f63dbc3a002ac0f203cce3b8d3434752fa2
+vendor/lib/vendor.qti.hardware.qconfig@1.0.so|13dcf057320adc8e6f102b52a7110b447777aa88
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|6b4208af7a8434d31d479084cdeb6dd80499867c
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|929dff5d3afb46e2954a9ef31b30b4a6fac7f5e9
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|eaadca336d36be7f2a8949d9d997367b6bc42200
