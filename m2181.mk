@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
     init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
@@ -38,8 +37,6 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.debug-yupik.sh \
     init.qti.kernel.debug.sh \
     init.qti.kernel.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
     qca6234-service.sh \
     vendor_modprobe.sh \
 
