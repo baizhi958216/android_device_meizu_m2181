@@ -4,7 +4,28 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 M2181_PREBUILT := device/meizu/prebuilt/m2181
+
+# A/B OTA dexopt update_engine hookup
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=ext4 \
+    POSTINSTALL_OPTIONAL_vendor=true
+
+# A/B OTA dexopt package
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
 
 # DTB
 PRODUCT_COPY_FILES += $(M2181_PREBUILT)/dtb:dtb.img
@@ -67,6 +88,11 @@ PRODUCT_COPY_FILES += \
 # Vendor modules
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(M2181_PREBUILT)/modules/vendor,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+
+# Update Engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_verifier
 
 # WiFi
 PRODUCT_PACKAGES += \
