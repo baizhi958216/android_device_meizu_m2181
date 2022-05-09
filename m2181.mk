@@ -7,6 +7,9 @@
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Call the proprietary setup
+$(call inherit-product, vendor/meizu/m2181/m2181-vendor.mk)
+
 M2181_PREBUILT := device/meizu/prebuilt/m2181
 
 # A/B OTA dexopt update_engine hookup
