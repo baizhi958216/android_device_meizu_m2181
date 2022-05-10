@@ -94,6 +94,20 @@ BOARD_USES_METADATA_PARTITION := true
 # AIDs
 TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/configs/config.fs
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
+# Display
+TARGET_SCREEN_DENSITY := 480
+
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
+# FM
+BOARD_HAVE_QCOM_FM := true
+
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
@@ -110,6 +124,9 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 # Recovery
 TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
