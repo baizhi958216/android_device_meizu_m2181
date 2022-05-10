@@ -97,6 +97,9 @@ TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/configs/config.fs
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Platform
+TARGET_BOARD_PLATFORM := lahaina
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
