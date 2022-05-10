@@ -137,9 +137,6 @@ qemu.hw.mainkeys=0
 #Camera_Edit yzw@camera.com add com.meizu.media.camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.meizu.media.camera
 
-#Add snapcam in privapp list
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam
-
 #enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
 
