@@ -128,6 +128,9 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SELinux
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
