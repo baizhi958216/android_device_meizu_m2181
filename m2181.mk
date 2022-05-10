@@ -275,7 +275,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
+    CarrierConfigOverlay \
+    WifiOverlay
 
 # QMI
 PRODUCT_PACKAGES += \
