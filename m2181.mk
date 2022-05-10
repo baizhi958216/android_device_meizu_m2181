@@ -210,6 +210,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/seccomp/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
+    $(LOCAL_PATH)/configs/seccomp/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
+    $(LOCAL_PATH)/configs/seccomp/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
+    $(LOCAL_PATH)/configs/seccomp/sxrhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxrhalservice.policy
+
 # Network
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
