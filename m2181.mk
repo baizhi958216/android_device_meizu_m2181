@@ -62,6 +62,12 @@ PRODUCT_PACKAGES += fs_config_files
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Audio
+$(call inherit-product, hardware/qcom-caf/sm8350/audio/configs/lahaina/lahaina.mk)
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
