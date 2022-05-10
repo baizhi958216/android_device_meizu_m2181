@@ -71,6 +71,9 @@ PRODUCT_COPY_FILES += \
 # Display
 $(call inherit-product, hardware/qcom-caf/sm8350/display/config/display-product.mk)
 
+# Data
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
