@@ -336,6 +336,7 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.sh \
     qca6234-service.sh \
     vendor_modprobe.sh \
+    ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
     fstab.default \
