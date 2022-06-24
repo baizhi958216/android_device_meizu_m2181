@@ -86,7 +86,6 @@ TARGET_KERNEL_SOURCE := kernel/meizu/sm8350
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifests/manifest_lahaina.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/configs/manifests/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
