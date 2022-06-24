@@ -110,6 +110,10 @@ BOARD_USES_METADATA_PARTITION := true
 # AIDs
 TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/configs/config.fs
 
+# Audio
+AUDIO_FEATURE_ENABLED_SSR := false
+AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -129,6 +133,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
+BOARD_USES_QCOM_HARDWARE := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop

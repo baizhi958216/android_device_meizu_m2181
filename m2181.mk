@@ -279,6 +279,10 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     WifiOverlay
 
+# Platform
+PRODUCT_BOARD_PLATFORM := lahaina
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
@@ -328,7 +332,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sdio.sh \
     init.qcom.sh \
     init.qti.chg_policy.sh \
-    init.qti.display_boot.sh \
     init.qti.kernel.debug-lahaina.sh \
     init.qti.kernel.debug-shima.sh \
     init.qti.kernel.debug-yupik.sh \
