@@ -84,9 +84,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     libbluetooth_audio_session \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -96,11 +94,8 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.postproc@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    vendor.qti.hardware.display.allocator@4.0 \
     vendor.qti.hardware.display.allocator@4.0.vendor \
     libstdc++.vendor \
     camera.qcom
@@ -124,15 +119,8 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0 \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1 \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2 \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3 \
-    android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.3-service.clearkey
+    libdrm.vendor \
+    android.hardware.drm@1.4-service.clearkey
 
 # Fastboot
 PRODUCT_PACKAGES += \
@@ -174,13 +162,9 @@ PRODUCT_COPY_FILES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
-    android.hidl.manager@1.0 \
     android.hidl.manager@1.0.vendor \
-    libhidltransport \
     libhidltransport.vendor \
-    libhwbinder \
     libhwbinder.vendor
 
 # Keymaster
@@ -257,13 +241,10 @@ PRODUCT_COPY_FILES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock
@@ -289,28 +270,13 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2 \
-    android.hardware.radio@1.2.vendor \
-    android.hardware.radio@1.3 \
-    android.hardware.radio@1.3.vendor \
-    android.hardware.radio@1.4 \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio@1.5 \
     android.hardware.radio@1.5.vendor \
-    android.hardware.radio.deprecated@1.0 \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio.config@1.0 \
-    android.hardware.radio.config@1.0.vendor \
-    android.hardware.radio.config@1.1 \
-    android.hardware.radio.config@1.1.vendor \
-    android.hardware.radio.config@1.2 \
     android.hardware.radio.config@1.2.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
