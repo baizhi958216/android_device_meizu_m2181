@@ -18,6 +18,18 @@ persist.vendor.cne.feature=1
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
+# Display
+vendor.display.disable_scaler=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.comp_mask=0
+vendor.display.enable_optimize_refresh=1
+vendor.display.use_smooth_motion=1
+vendor.display.disable_offline_rotator=1
+vendor.display.enable_async_powermode=0
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.enable_early_wakeup=1
+
 # Dpm
 persist.vendor.dpmhalservice.enable=1
 persist.vendor.dpm.idletimer.mode=default
@@ -99,6 +111,15 @@ ro.soc.manufacturer=QTI
 
 # Storage
 ro.incremental.enable=yes
+
+# SurfaceFlinger
+debug.sf.latch_unsignaled=1
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.disable_client_composition_cache=1
 
 # USB
 vendor.usb.diag.func.name=ffs

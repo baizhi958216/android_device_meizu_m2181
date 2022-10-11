@@ -1,1 +1,7 @@
 persist.vendor.dpm.feature=11
+
+#property to enable HWC for VDS
+debug.sf.enable_hwc_vds=1
+
+#property to latch unsignaled buffer
+debug.sf.latch_unsignaled=1
