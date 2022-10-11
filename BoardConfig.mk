@@ -88,7 +88,6 @@ BOARD_PREBUILT_DTBOIMAGE := $(M2181_PREBUILT)/dtbo.img
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := vendor/lahaina_GKI
 TARGET_KERNEL_SOURCE := kernel/qcom/sm8350
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # HIDL
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
