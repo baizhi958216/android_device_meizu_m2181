@@ -150,7 +150,7 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 
 # DRM
 PRODUCT_PACKAGES += \
-    libdrm.vendor \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
 # Fastboot
